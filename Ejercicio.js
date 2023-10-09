@@ -26,4 +26,18 @@ inputNuevo.value = "Hola";
 labelNuevo.appendChild(inputNuevo);
 label1.after(labelNuevo);
 
+
 // Ejercicio 2: Inserción de Nodos
+// 2.1. Utiliza document.querySelector() para obtener el primer párrafo dentro del div con id "lipsum" en tu página web de ejemplo. Almacena este nodo en una variable llamada primerParrafo.
+let primerParrafo = document.querySelector("#lipsum p");
+
+// 2.2. Crea un nuevo elemento <p> con el texto "Este es el nuevo segundo párrafo" y almacénalo en una variable llamada nuevoParrafo.
+let nuevoParrafo = document.createElement('p');
+nuevoParrafo.innerHTML+= "Este es el nuevo segundo párrafo";
+
+// 2.3. Utiliza el método primerParrafo.before(nuevoParrafo) para insertar nuevoParrafo antes del primer párrafo dentro del div "lipsum".
+primerParrafo.before(nuevoParrafo);
+
+
+// Ejercicio 3: Reemplazo y Eliminación de Nodos
+// 3.1. Utiliza document.querySelector() para obtener el primer elemento <li> dentro de una lista en tu página web de ejemplo. Almacena este nodo en una variable llamada primerElemento.
