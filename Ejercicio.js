@@ -17,3 +17,13 @@ parrafoNuevo.innerHTML+='Nuevo párrafo <strong>añadido</strong> por javascript
 divLipsum.appendChild(parrafoNuevo);
 
 // Un nuevo elemento al formulario tras el ‘Dato 1’ con la etiqueta ‘Dato 1 bis’ y el INPUT con id ‘input1bis’ que al cargar la página tendrá escrito “Hola”
+let label1 = document.querySelector("label[for='input1']");
+let labelNuevo = document.createElement('label');
+labelNuevo.innerHTML += 'Dato 1 bis';
+let inputNuevo = document.createElement('input');
+inputNuevo.setAttribute('id','input1bis');
+inputNuevo.value = "Hola";
+labelNuevo.appendChild(inputNuevo);
+label1.after(labelNuevo);
+
+// Ejercicio 2: Inserción de Nodos
